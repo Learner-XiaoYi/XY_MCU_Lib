@@ -1,0 +1,18 @@
+# Keil MDK 编译输出文件夹
+Objects/
+Listings/
+*.axf *.hex *.bin *.map *.elf *.sct *.lnp
+*.o *.d *.crf *.lst *.dep *.bak
+
+# Keil 临时配置（可选保留 uvprojx 工程文件，过滤临时uvoptx/uvguix）
+*.uvoptx
+*.uvguix.*
+
+# CubeMX 缓存
+*.mxproject
+*.ioc.bak
+
+# 系统/编辑器缓存
+.vscode/
+.DS_Store
+Thumbs.db
