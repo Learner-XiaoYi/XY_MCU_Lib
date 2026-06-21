@@ -22,6 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "app.h"
 
 /* USER CODE END Includes */
 
@@ -96,8 +97,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	system_user_init();
   while (1)
   {
+		scheduler_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
