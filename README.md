@@ -21,7 +21,7 @@ A lightweight and reusable MCU development library for STM32 and embedded system
 当前采用基础分层设计：
 
 * **BSP层**：硬件相关封装（GPIO / UART / SPI / I2C 等）
-* **Driver层**：外设驱动（传感器 / 存储器 / 显示等）
+* **Hardware层**：外设驱动（传感器 / 存储器 / 显示等）
 * **Middleware层**：通信与协议（MQTT / JSON / Modbus 等）
 * **Utils层**：通用工具（RingBuffer / CRC / Log / Timer）
 * **App层**：具体应用逻辑
