@@ -1,10 +1,11 @@
 # Keil MDK 编译输出文件夹
 Objects/
 Listings/
+xy_bsp/MDK-ARM/xy_bsp/
 *.axf *.hex *.bin *.map *.elf *.sct *.lnp
 *.o *.d *.crf *.lst *.dep *.bak
 
-# Keil 临时配置（可选保留 uvprojx 工程文件，过滤临时uvoptx/uvguix）
+# Keil 临时配置（保留uvprojx工程文件，过滤临时布局文件）
 *.uvoptx
 *.uvguix.*
 
