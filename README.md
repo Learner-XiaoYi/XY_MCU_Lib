@@ -8,7 +8,7 @@ A lightweight and reusable MCU development library for STM32 and embedded system
 
 目标是常用嵌入式软件组件，使不同项目之间可以快速迁移与复用代码，提高开发效率与代码规范性。
 
-
+最终目标是覆盖嵌入式开发中约 90% 的常用基础组件与通用算法模块，为快速开发与项目复用提供统一的基础框架。
 
  统一嵌入式开发接口风格
  屏蔽底层芯片差异（HAL / 寄存器）
