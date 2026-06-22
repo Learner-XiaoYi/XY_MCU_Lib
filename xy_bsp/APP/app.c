@@ -12,7 +12,8 @@ typedef struct
 	 
 static task_t scheduler_task[] =
 {
-	{LED_TrafficLight_Task,100,0}
+	{app_key,10,0},
+	{app_status,200,0}
 };
 
 
@@ -38,8 +39,10 @@ void scheduler_run(void)
 void system_user_init(void)	
 {
 	scheduler_init();
-	
+	BSP_UART_Init();
 	LED_OFF();
+	
+	BSP_uart_text();
 }	
 
 
