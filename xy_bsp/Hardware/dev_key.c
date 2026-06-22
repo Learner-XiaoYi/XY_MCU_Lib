@@ -11,7 +11,7 @@ void key_show(KEY_t *k)
     uint8_t level = BSP_GPIO_Read(&k->gpio);
     k->last_level = level;
 
-    // 按下计时
+
     if(level == GPIO_LOW)
     {
         if(k->cnt < 0xFFFF)
@@ -19,7 +19,7 @@ void key_show(KEY_t *k)
     }
     else
     {
-        // 松手判断
+
         if(k->cnt > KEY_FILTER_TIME && k->cnt < KEY_LONG_TIME)
         {
             k->short_flag = 1;
@@ -28,7 +28,7 @@ void key_show(KEY_t *k)
         {
             k->long_flag = 1;
         }
-        // 清计时
+
         k->cnt = 0;
     }
 }
