@@ -8,23 +8,12 @@ RGB_LED_t LED1 =
     {GPIOE, GPIO_PIN_4}   // B
 };
 
-//设置灯色
+//设置灯色 GPIO_HIGH  GPIO_LOW
 void LED_Set(RGB_LED_t *led, uint8_t r, uint8_t g, uint8_t b)
 {
-    if(r)
-        BSP_GPIO_Reset(&led->R);
-    else
-        BSP_GPIO_Set(&led->R);
-
-    if(g)
-        BSP_GPIO_Reset(&led->G);
-    else
-        BSP_GPIO_Set(&led->G);
-
-    if(b)
-        BSP_GPIO_Reset(&led->B);
-    else
-        BSP_GPIO_Set(&led->B);
+    BSP_GPIO_Write(&led->R, r ? GPIO_LOW : GPIO_HIGH);
+    BSP_GPIO_Write(&led->G, g ? GPIO_LOW : GPIO_HIGH);
+    BSP_GPIO_Write(&led->B, b ? GPIO_LOW : GPIO_HIGH);
 }
 
 void LED_OFF(void)
