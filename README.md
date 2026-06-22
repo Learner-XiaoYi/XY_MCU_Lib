@@ -32,17 +32,24 @@ A lightweight and reusable MCU development library for STM32 and embedded system
 
 ### BSP
 
-* GPIO（开发中）
-* UART（计划中）
+* GPIO（完成）
+* UART（简易完成）
+* ADC (准备中)
+* DAC (准备中)
 * Delay（计划中）
 
-### Driver
+### Hardware
 
-* TBD
+* LED（完成）
+* KEY（简易完成,后续添加双击等事件）
+* OTFTLCD (进行中)
+* 后续安排
+
 
 ### Utils
 
-* TBD
+* 
+
 
 ---
 
